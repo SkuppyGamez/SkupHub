@@ -1,0 +1,30 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SkupHub", "DarkTheme")
+
+local MainSection = Window:NewTab("Scripts")
+
+-- Fling Scripts
+local FlingScripts = Window:NewTab("Fling Scripts")
+local FlingScriptsSection = FlingScripts:NewSection("Scripts") 
+FlingScriptsSection:NewButton("FE Idiot Fling", "Click on a player to fling, It is harder to fling moving targets.", function()
+    loadstring(game.HttpGet(game, "https://pastebin.com/raw/DVprAe4a"))();
+end)
+FlingScriptsSection:NewButton("Mouse Fling", "Click on a player to fling.", function()
+    loadstring(game.HttpGet(game, "https://pastebin.com/raw/q3y5ZeY9"))();
+end)
+FlingScriptsSection:NewButton("Sniper Fling", "Make sure you have the Cyber Sniper equipped.", function()
+    loadstring(game.HttpGet(game, "https://pastebin.com/raw/7BC7RpdZ"))();
+end)
+-- Anti Fling Script
+local FlingScriptsSection2 = FlingScripts:NewSection("Anti Fling Script")
+FlingScriptsSection2:NewButton("Anti fling", "No one can fling you with this.", function()
+    loadstring(game.HttpGet(game, "pastebin.com/raw/DDdsZtj1"))();
+end)
+
+-- Main Scripts
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Scripts")
+
+MainSection:NewButton("Infinite Yield", "FE admin script.", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
